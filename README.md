@@ -1,7 +1,7 @@
 # IoT Embedded Programming with CircuitPython
 
 ## Workshop
-The Internet of Things ([IoT](http://www.tamberg.org/fhnw/2021/hs/IoT01Introduction.pdf)) is the convergence of internet and real world. IoT embedded devices typically have limited resources, but they are also becoming more performant with each generation.
+The Internet of Things ([IoT](http://www.tamberg.org/fhnw/2021/hs/IoT01Introduction.pdf)) is the convergence of internet and real world. IoT embedded devices typically have limited resources, but they are also becoming more performant with each generation. This enables interpreted languages like Python.
 
 ### Topics
 - [Introduction](#introduction)
