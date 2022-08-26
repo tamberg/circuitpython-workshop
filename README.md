@@ -105,6 +105,11 @@ Copy your code to a file named code.py on the drive.
 <img src="QtPyEsp32S2BlinkWiring.png" width="320"/>
 
 ```
+/CIRCUITPY
+└── code.py # copied from below
+```
+
+```
 import board
 import digitalio
 import time
@@ -121,6 +126,11 @@ while True:
 
 ### Button (digital input)
 <img src="QtPyEsp32S2ButtonWiring.png" width="320"/>
+
+```
+/CIRCUITPY
+└── code.py # copied from below
+```
 
 ```
 import board
