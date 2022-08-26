@@ -50,24 +50,24 @@ https://www.adafruit.com/product/5325 (Adafruit QT Py ESP32-S2 WiFi Dev Board)
 #### Board
 https://circuitpython.org/board/adafruit_qtpy_esp32s2/
 
-#### ESP32-S2 ROM bootloader mode
+#### ESP32-S2 ROM bootloader mode (once)
 To get the ESP32-S2 into [ROM bootloader mode](https://learn.adafruit.com/adafruit-qt-py-esp32-s2/pinouts#buttons-3107929)
 
 * Press and hold the _BOOT_ button
 * Then, press the _RESET_ button
 * Release the _BOOT_ button
 
-Now board should show up as a USB device, e.g. /dev/cu.usbmodem01 on MacOS or COM3 on Windows.
+Now the board should show up as a USB device, e.g. /dev/cu.usbmodem01 on MacOS or COM3 on Windows.
 
-#### Install UF2 Bootloader
+#### Install UF2 Bootloader (once)
 To install the UF2 bootloader, follow the steps to _Install, Repair, or Update UF2 Bootloader_ at the bottom of https://circuitpython.org/board/adafruit_qtpy_esp32s2/
 
 Use https://nabucasa.github.io/esp-web-flasher/ with _combined.bin_ from [tinyuf2-adafruit_qtpy_esp32s2-0.10.2.zip](https://github.com/adafruit/tinyuf2/releases/download/0.10.2/tinyuf2-adafruit_qtpy_esp32s2-0.10.2.zip)
 
-Now the board should show up as a USB drive named QTPYS2BOOT.
+Now press _RESET_ to make the board show up as a USB drive named QTPYS2BOOT.
 
-#### Install CircuitPython
-
+#### Install CircuitPython (once)
+TODO
 
 #### Pinout
 <img text="ESP32-S2 Pinout, (c) Adafruit" src="https://cdn-learn.adafruit.com/assets/assets/000/107/493/original/adafruit_products_Adafruit_QT_Py_ESP32-S2_Pinout.png?1640130293" width="800"/>
