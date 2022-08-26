@@ -93,3 +93,25 @@ https://docs.zephyrproject.org/latest/boards/riscv/esp32c3_devkitm/doc/index.htm
 #### Datasheets
 * [ESP32-C3 Series Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf)
 * [ESP32-C3 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf)
+
+## GPIO & sensors
+### Blinky (digital output)
+Try [blink](blink)
+
+<img src="QtPyEsp32S2BlinkWiring.png" width="320"/>
+
+### Button (digital input)
+Try [button](button)
+
+<img src="QtPyEsp32S2ButtonWiring.png" width="320"/>
+
+### DHT11 temperature & humidity
+Try [dht](dht)
+
+<img src="QtPyEsp32S2_TODO.png" width="320"/>
+
+### More sensors
+See [TODO](https://TODO)
+
+## Wi-Fi & HTTP
+TODO
