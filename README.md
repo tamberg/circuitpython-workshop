@@ -34,3 +34,8 @@ CircuitPython works with any text editor, e.g. [Mu Editor](https://codewith.mu/)
 ### Serial Monitor
 To see output you'll need a serial monitor like [PuTTY](https://www.putty.org/) on Windows or *screen* on MacOS, Linux.
 
+### CircuitPython Libraries
+Download the CircuitPython library bundle ZIP file from https://circuitpython.org/libraries
+
+You will selectively copy files from the ZIP to your microcontroller later on.
+
