@@ -22,7 +22,15 @@ Participants need a laptop with MacOS, Windows or Linux, and two USB/USB-C ports
 The workshop requires a Wi-Fi network that is accessible without a portal. Alternatively, a personal smartphone can be used as a hotspot.
 
 ## Introduction
+### CircuitPython
 > The easiest way to program microcontrollers
 
 https://circuitpython.org/
+
+## Toolchain setup
+### Text Editor
+CircuitPython works with any text editor, e.g. [Mu Editor](https://codewith.mu/), [VS Code](https://code.visualstudio.com/), or *nano*.
+
+### Serial Monitor
+To see output you'll need a serial monitor like [PuTTY](https://www.putty.org/) on Windows or *screen* on MacOS, Linux.
 
