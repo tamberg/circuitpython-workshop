@@ -156,7 +156,7 @@ while True:
         print("{:.2f} °C, {:.2f} %".format(temp, humi))
 
     except RuntimeError as e:
-        print("Reading the sensor did not work")
+        print("Oops, reading the sensor did not work.")
 
     time.sleep(5)
 ```
