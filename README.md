@@ -107,6 +107,8 @@ Use https://nabucasa.github.io/esp-web-flasher/ with _combined.bin_ from [tinyuf
 
 ## GPIO & sensors
 ### Blinky (digital output)
+<img src="QtPyEsp32S2BlinkWiring.png" width="320"/>
+
 ```
 import board
 import digitalio
@@ -122,9 +124,9 @@ while True:
     time.sleep(1)
 ```
 
-<img src="QtPyEsp32S2BlinkWiring.png" width="320"/>
-
 ### Button (digital input)
+<img src="QtPyEsp32S2ButtonWiring.png" width="320"/>
+
 ```
 import board
 import digitalio
@@ -138,10 +140,9 @@ while True:
     print(sensor.value)
     time.sleep(0.1)
 ```
-
-<img src="QtPyEsp32S2ButtonWiring.png" width="320"/>
-
 ### DHT11 temperature & humidity
+<img src="QtPyEsp32S2_TODO.png" width="320"/>
+
 ```
 import adafruit_dht
 import board
@@ -160,8 +161,6 @@ while True:
 
     time.sleep(5)
 ```
-
-<img src="QtPyEsp32S2_TODO.png" width="320"/>
 
 ### More sensors
 See [TODO](https://TODO)
