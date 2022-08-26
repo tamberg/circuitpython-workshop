@@ -107,17 +107,59 @@ Use https://nabucasa.github.io/esp-web-flasher/ with _combined.bin_ from [tinyuf
 
 ## GPIO & sensors
 ### Blinky (digital output)
-Try [blink](blink)
+```
+import board
+import digitalio
+import time
+
+actuator = digitalio.DigitalInOut(board.D18)
+actuator.direction = digitalio.Direction.OUTPUT
+
+while True:
+    actuator.value = True
+    time.sleep(1)
+    actuator.value = False
+    time.sleep(1)
+```
 
 <img src="QtPyEsp32S2BlinkWiring.png" width="320"/>
 
 ### Button (digital input)
-Try [button](button)
+```
+import board
+import digitalio
+import time
+
+sensor = digitalio.DigitalInOut(board.D18)
+sensor.direction = digitalio.Direction.INPUT
+sensor.pull = digitalio.Pull.UP
+
+while True:
+    print(sensor.value)
+    time.sleep(0.1)
+```
 
 <img src="QtPyEsp32S2ButtonWiring.png" width="320"/>
 
 ### DHT11 temperature & humidity
-Try [dht](dht)
+```
+import adafruit_dht
+import board
+import time
+
+dht = adafruit_dht.DHT11(board.D18)
+
+while True:
+    try:
+        temp = dht.temperature
+        humi = dht.humidity
+        print("{:g},{:g}".format(temp, humi))
+
+    except RuntimeError as e:
+        print("Reading the sensor did not work")
+
+    time.sleep(5)
+```
 
 <img src="QtPyEsp32S2_TODO.png" width="320"/>
 
