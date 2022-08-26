@@ -42,7 +42,6 @@ You will selectively copy files from the ZIP to your microcontroller later on.
 ## Hardware Setup
 ### Boards
 * [ESP32-S2](#esp32-s2)
-* [ESP32-C3](#esp32-c3)
 
 ### ESP32-S2
 #### Buy
@@ -75,35 +74,6 @@ Use https://nabucasa.github.io/esp-web-flasher/ with _combined.bin_ from [tinyuf
 * [ESP32-S2 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-s2_technical_reference_manual_en.pdf)
 * [ESP32-S2 WROVER Technical Reference Manual](https://cdn-learn.adafruit.com/assets/assets/000/096/707/original/esp32-s2-wrover_esp32-s2-wrover-i_datasheet_en.pdf)
 * https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/hw-reference/esp32s2/user-guide-saola-1-v1.2.html (esp32s2_saola)
-
-### ESP32-C3
-#### Buy
-https://www.adafruit.com/product/5405 (Adafruit QT Py ESP32-C3 WiFi Dev Board)
-
-#### Board
-https://circuitpython.org/board/adafruit_qtpy_esp32c3/
-
-#### UF2 Bootloader
-To install the UF2 bootloader, follow the steps to _Install, Repair, or Update UF2 Bootloader_ at the bottom of https://circuitpython.org/board/adafruit_qtpy_esp32s2/
-
-Use https://nabucasa.github.io/esp-web-flasher/ with _combined.bin_ from [tinyuf2-adafruit_qtpy_esp32s2-0.10.2.zip](https://github.com/adafruit/tinyuf2/releases/download/0.10.2/tinyuf2-adafruit_qtpy_esp32s2-0.10.2.zip)
-
-#### Pinout
-<img text="ESP32-C3 Pinout, (c) Adafruit" src="https://cdn-learn.adafruit.com/assets/assets/000/109/663/original/adafruit_products_image.png" width="640"/>
-
-* https://learn.adafruit.com/assets/109663 (Pinout)
-* https://learn.adafruit.com/adafruit-qt-py-esp32-c3-wifi-dev-board/pinouts
-
-#### Schematic
-<img text="ESP32-C3 Layout, (c) Adafruit" src="https://cdn-learn.adafruit.com/assets/assets/000/109/793/original/adafruit_products_QTC3_sch.png?1647545127" width="640"/>
-
-* https://learn.adafruit.com/assets/109793 (Schematic)
-* https://learn.adafruit.com/adafruit-qt-py-esp32-c3-wifi-dev-board/downloads
-* https://github.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB
-
-#### Datasheets
-* [ESP32-C3 Series Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf)
-* [ESP32-C3 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf)
 
 ## GPIO & sensors
 ### Blinky (digital output)
