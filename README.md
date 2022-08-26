@@ -138,9 +138,12 @@ while True:
 ### DHT11 temperature & humidity
 <img src="QtPyEsp32S2_TODO.png" width="320"/>
 
-Make sure _CIRCUITPY/lib_ contains _adafruit_dht.mpy_
-
-Then copy this code to _CIRCUITPY/code.py_ 
+```
+/CIRCUITPY
+├── code.py # copied from below
+└── lib # libraries from bundle
+    └── adafruit_dht.mpy
+```
 
 ```
 import adafruit_dht
