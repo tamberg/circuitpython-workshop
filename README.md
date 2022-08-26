@@ -153,7 +153,7 @@ while True:
     try:
         temp = dht.temperature
         humi = dht.humidity
-        print("{:g},{:g}".format(temp, humi))
+        print("{:.2f} °C, {:.2f} %".format(temp, humi))
 
     except RuntimeError as e:
         print("Reading the sensor did not work")
