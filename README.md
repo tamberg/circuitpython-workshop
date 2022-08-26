@@ -160,12 +160,12 @@ import adafruit_dht
 import board
 import time
 
-dht = adafruit_dht.DHT11(board.D18)
+sensor = adafruit_dht.DHT11(board.D18)
 
 while True:
     try:
-        temp = dht.temperature
-        humi = dht.humidity
+        temp = sensor.temperature
+        humi = sensor.humidity
         print("{:.2f} °C, {:.2f} %".format(temp, humi))
 
     except RuntimeError as e:
