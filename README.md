@@ -51,6 +51,9 @@ https://www.adafruit.com/product/5325 (Adafruit QT Py ESP32-S2 WiFi Dev Board)
 #### Board
 https://circuitpython.org/board/adafruit_qtpy_esp32s2/
 
+#### UF2 Bootloader
+To install the UF2 bootloader, follow the steps to _Install, Repair, or Update UF2 Bootloader_ at the bottom of https://circuitpython.org/board/adafruit_qtpy_esp32s2/
+
 #### Pinout
 <img text="ESP32-S2 Pinout, (c) Adafruit" src="https://cdn-learn.adafruit.com/assets/assets/000/107/493/original/adafruit_products_Adafruit_QT_Py_ESP32-S2_Pinout.png?1640130293" width="800"/>
 
@@ -77,6 +80,9 @@ https://www.adafruit.com/product/5405 (Adafruit QT Py ESP32-C3 WiFi Dev Board)
 
 #### Board
 https://circuitpython.org/board/adafruit_qtpy_esp32c3/
+
+#### UF2 Bootloader
+To install the UF2 bootloader, follow the steps to _Install, Repair, or Update UF2 Bootloader_ at the bottom of https://circuitpython.org/board/adafruit_qtpy_esp32c3/
 
 #### Pinout
 <img text="ESP32-C3 Pinout, (c) Adafruit" src="https://cdn-learn.adafruit.com/assets/assets/000/109/663/original/adafruit_products_image.png" width="640"/>
