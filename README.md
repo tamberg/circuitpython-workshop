@@ -76,7 +76,7 @@ Use https://nabucasa.github.io/esp-web-flasher/ with _combined.bin_ from [tinyuf
 * https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/hw-reference/esp32s2/user-guide-saola-1-v1.2.html (esp32s2_saola)
 
 ## GPIO & sensors
-### Blinky (digital output)
+### Blink (digital output)
 <img src="QtPyEsp32S2BlinkWiring.png" width="320"/>
 
 ```
