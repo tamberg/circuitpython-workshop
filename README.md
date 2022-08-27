@@ -42,7 +42,6 @@ You will selectively copy files from the ZIP to your microcontroller later on.
 ## Hardware Setup
 ### Boards
 * [ESP32-S2](#esp32-s2)
-* [ESP32-C3](#esp32-c3)
 
 ### ESP32-S2
 #### Buy
@@ -51,10 +50,35 @@ https://www.adafruit.com/product/5325 (Adafruit QT Py ESP32-S2 WiFi Dev Board)
 #### Board
 https://circuitpython.org/board/adafruit_qtpy_esp32s2/
 
-#### UF2 Bootloader
+#### ESP32-S2 ROM bootloader mode (once)
+To get the ESP32-S2 into [ROM bootloader mode](https://learn.adafruit.com/adafruit-qt-py-esp32-s2/pinouts#buttons-3107929)
+
+* Press and hold the _BOOT_ button
+* Then, press the _RESET_ button
+* Release the _BOOT_ button
+
+Now the board should show up as a USB device, e.g. /dev/cu.usbmodem01 on MacOS or COM3 on Windows.
+
+#### Install UF2 Bootloader (once)
 To install the UF2 bootloader, follow the steps to _Install, Repair, or Update UF2 Bootloader_ at the bottom of https://circuitpython.org/board/adafruit_qtpy_esp32s2/
 
 Use https://nabucasa.github.io/esp-web-flasher/ with _combined.bin_ from [tinyuf2-adafruit_qtpy_esp32s2-0.10.2.zip](https://github.com/adafruit/tinyuf2/releases/download/0.10.2/tinyuf2-adafruit_qtpy_esp32s2-0.10.2.zip)
+
+Now press _RESET_ to make the board show up as a USB drive named _QTPYS2BOOT_.
+
+#### Install CircuitPython (once)
+Download the board specific .UF2 file from https://circuitpython.org/board/adafruit_qtpy_esp32s2/
+
+Drop it on the USB drive named _QTPYS2BOOT_ and wait until the drive disconnects.
+
+Now the board should show up as a USB drive named _CIRCUITPY_.
+
+#### Install your Python code
+Plug in your board via USB and open the _CIRCUITPY_ drive.
+
+Copy required libraries from the bundle to the lib folder.
+
+Copy your code to a file named code.py on the drive.
 
 #### Pinout
 <img text="ESP32-S2 Pinout, (c) Adafruit" src="https://cdn-learn.adafruit.com/assets/assets/000/107/493/original/adafruit_products_Adafruit_QT_Py_ESP32-S2_Pinout.png?1640130293" width="800"/>
@@ -76,37 +100,15 @@ Use https://nabucasa.github.io/esp-web-flasher/ with _combined.bin_ from [tinyuf
 * [ESP32-S2 WROVER Technical Reference Manual](https://cdn-learn.adafruit.com/assets/assets/000/096/707/original/esp32-s2-wrover_esp32-s2-wrover-i_datasheet_en.pdf)
 * https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/hw-reference/esp32s2/user-guide-saola-1-v1.2.html (esp32s2_saola)
 
-### ESP32-C3
-#### Buy
-https://www.adafruit.com/product/5405 (Adafruit QT Py ESP32-C3 WiFi Dev Board)
-
-#### Board
-https://circuitpython.org/board/adafruit_qtpy_esp32c3/
-
-#### UF2 Bootloader
-To install the UF2 bootloader, follow the steps to _Install, Repair, or Update UF2 Bootloader_ at the bottom of https://circuitpython.org/board/adafruit_qtpy_esp32s2/
-
-Use https://nabucasa.github.io/esp-web-flasher/ with _combined.bin_ from [tinyuf2-adafruit_qtpy_esp32s2-0.10.2.zip](https://github.com/adafruit/tinyuf2/releases/download/0.10.2/tinyuf2-adafruit_qtpy_esp32s2-0.10.2.zip)
-
-#### Pinout
-<img text="ESP32-C3 Pinout, (c) Adafruit" src="https://cdn-learn.adafruit.com/assets/assets/000/109/663/original/adafruit_products_image.png" width="640"/>
-
-* https://learn.adafruit.com/assets/109663 (Pinout)
-* https://learn.adafruit.com/adafruit-qt-py-esp32-c3-wifi-dev-board/pinouts
-
-#### Schematic
-<img text="ESP32-C3 Layout, (c) Adafruit" src="https://cdn-learn.adafruit.com/assets/assets/000/109/793/original/adafruit_products_QTC3_sch.png?1647545127" width="640"/>
-
-* https://learn.adafruit.com/assets/109793 (Schematic)
-* https://learn.adafruit.com/adafruit-qt-py-esp32-c3-wifi-dev-board/downloads
-* https://github.com/adafruit/Adafruit-QT-Py-ESP32-C3-PCB
-
-#### Datasheets
-* [ESP32-C3 Series Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf)
-* [ESP32-C3 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-c3_technical_reference_manual_en.pdf)
-
 ## GPIO & sensors
-### Blinky (digital output)
+### Blink (digital output)
+<img src="QtPyEsp32S2BlinkWiring.png" width="320"/>
+
+```
+/CIRCUITPY
+└── code.py # copied from below
+```
+
 ```
 import board
 import digitalio
@@ -122,9 +124,14 @@ while True:
     time.sleep(1)
 ```
 
-<img src="QtPyEsp32S2BlinkWiring.png" width="320"/>
-
 ### Button (digital input)
+<img src="QtPyEsp32S2ButtonWiring.png" width="320"/>
+
+```
+/CIRCUITPY
+└── code.py # copied from below
+```
+
 ```
 import board
 import digitalio
@@ -138,21 +145,27 @@ while True:
     print(sensor.value)
     time.sleep(0.1)
 ```
-
-<img src="QtPyEsp32S2ButtonWiring.png" width="320"/>
-
 ### DHT11 temperature & humidity
+<img src="QtPyEsp32S2_TODO.png" width="320"/>
+
+```
+/CIRCUITPY
+├── code.py # copied from below
+└── lib # libraries from bundle
+    └── adafruit_dht.mpy
+```
+
 ```
 import adafruit_dht
 import board
 import time
 
-dht = adafruit_dht.DHT11(board.D18)
+sensor = adafruit_dht.DHT11(board.D18)
 
 while True:
     try:
-        temp = dht.temperature
-        humi = dht.humidity
+        temp = sensor.temperature
+        humi = sensor.humidity
         print("{:.2f} °C, {:.2f} %".format(temp, humi))
 
     except RuntimeError as e:
