@@ -146,7 +146,7 @@ while True:
     time.sleep(0.1)
 ```
 ### DHT11 temperature & humidity
-<img src="QtPyEsp32S2_TODO.png" width="320"/>
+<img src="QtPyEsp32S2DhtWiring.png" width="480"/>
 
 ```
 /CIRCUITPY
@@ -173,8 +173,6 @@ while True:
 
     time.sleep(5)
 ```
-
-<img src="QtPyEsp32S2DhtWiring.png" width="480"/>
 
 ### More sensors
 See [TODO](https://TODO)
