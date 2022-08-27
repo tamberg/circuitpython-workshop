@@ -174,7 +174,7 @@ while True:
     time.sleep(5)
 ```
 
-<img src="QtPyEsp32S2DhtWiring.png" width="640"/>
+<img src="QtPyEsp32S2DhtWiring.png" width="540"/>
 
 ### More sensors
 See [TODO](https://TODO)
