@@ -144,7 +144,7 @@ while True:
     time.sleep(0.1)
 ```
 ### DHT11 temperature & humidity
-<img src="QtPyEsp32S2DhtWiring.png" width="420"/>
+<img src="QtPyEsp32S2DhtWiring.png" width="400"/>
 
 ```
 /CIRCUITPY
