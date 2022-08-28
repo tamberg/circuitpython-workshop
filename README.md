@@ -173,7 +173,7 @@ while True:
 ```
 
 ### More sensors
-See [TODO](https://TODO)
+See [libraries docs](https://docs.circuitpython.org/projects/bundle/en/latest/drivers.html)
 
 ## Wi-Fi & HTTP
 TODO
