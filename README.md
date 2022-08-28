@@ -172,8 +172,8 @@ while True:
     time.sleep(5)
 ```
 
-### More sensors
-See [libraries docs](https://docs.circuitpython.org/projects/bundle/en/latest/drivers.html)
+### More
+Search the [library bundle docs](https://docs.circuitpython.org/projects/bundle/en/latest/drivers.html) for a sensor or actuator name.
 
 ## Wi-Fi & HTTP
 TODO
