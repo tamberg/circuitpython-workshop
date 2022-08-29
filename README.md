@@ -31,6 +31,10 @@ https://circuitpython.org/
 ### Text Editor
 CircuitPython works with any text editor, e.g. [Mu Editor](https://codewith.mu/), [VS Code](https://code.visualstudio.com/), or *nano*.
 
+```
+$ nano /Volumes/CIRCUITPY/code.py
+```
+
 ### Serial Monitor
 To see output you'll need a serial monitor like [PuTTY](https://www.putty.org/) on Windows or *screen* on MacOS, Linux.
 
