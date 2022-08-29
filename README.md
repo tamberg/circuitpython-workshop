@@ -255,7 +255,7 @@ Connecting to Wi-Fi "MY_SSID"...
 Connected, IP address = 192.168.113.170
 Posting to https://api.thingspeak.com/update.json
 > {'field1': 23.0, 'api_key': '****************'}
-< {'field1': 23.0, 'status': None, 'longitude': None, 'entry_id': 78, 'latitude': None, 'elevation': None, 'field8': None, 'channel_id': 42, 'field7': None, 'created_at': '2022-08-30T13:37:00Z', 'field6': None, 'field5': None, 'field4': None, 'field3': None, 'field2': None}
+< {'field1': 23.0, 'channel_id': 42, 'created_at': '2022-08-30T13:37:00Z', ...}
 ```
 
 ### MQTT publish
