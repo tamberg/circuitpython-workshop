@@ -187,9 +187,7 @@ Search the [library bundle docs](https://docs.circuitpython.org/projects/bundle/
 ### Wi-Fi connect
 ```
 /CIRCUITPY
-├── code.py # copied from below
-└── lib # libraries from bundle
-    └── TODO
+└── code.py # copied from below
 ```
 
 ```
