@@ -240,7 +240,7 @@ https = adafruit_requests.Session(socket, context)
 while True:
     value = 23.0 # e.g. from sensor
     json_data = {
-        "api_key": CLOUD_KEY
+        "api_key": CLOUD_KEY,
         "field1": value, 
     }
     print("{0}\n\n{1}".format(CLOUD_URL, json_data))
