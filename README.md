@@ -88,6 +88,10 @@ Copy required libraries from the bundle to the lib folder.
 
 Copy your code to a file named code.py on the drive.
 
+```
+$ cp hello/code.py /Volumes/CIRCUITPY/code.py
+```
+
 #### Pinout
 <img text="ESP32-S2 Pinout, (c) Adafruit" src="https://cdn-learn.adafruit.com/assets/assets/000/107/493/original/adafruit_products_Adafruit_QT_Py_ESP32-S2_Pinout.png?1640130293" width="800"/>
 
