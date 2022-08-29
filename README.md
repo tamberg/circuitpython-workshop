@@ -108,6 +108,8 @@ Copy your code to a file named code.py on the drive.
 
 ## GPIO & sensors
 ### Blink (digital output)
+Control a LED or any other digital actuator.
+
 <img src="QtPyEsp32S2BlinkWiring.png" width="320"/>
 
 ```
@@ -131,6 +133,8 @@ while True:
 ```
 
 ### Button (digital input)
+Read a button or any other digital sensor.
+
 <img src="QtPyEsp32S2ButtonWiring.png" width="320"/>
 
 ```
@@ -152,6 +156,8 @@ while True:
     time.sleep(0.1)
 ```
 ### DHT11 temperature & humidity
+Read a DHT11 sensor using the *adafruit_dht* library.
+
 <img src="QtPyEsp32S2DhtWiring.png" width="400"/>
 
 ```
@@ -185,6 +191,8 @@ Search the [library bundle docs](https://docs.circuitpython.org/projects/bundle/
 
 ## Wi-Fi, HTTP & MQTT
 ### Wi-Fi connect
+Connect to the Internet using Wi-Fi.
+
 ```
 /CIRCUITPY
 └── code.py # copied from below
@@ -209,9 +217,7 @@ Code done running.
 ```
 
 ### HTTP post
-Post data to the https://thingspeak.com/ cloud backend.
-
-Create a free account to get a Write API Key.
+Post data to the https://thingspeak.com/ cloud backend using HTTPS. Create a free account to get a Write API Key.
 
 ```
 /CIRCUITPY
@@ -263,6 +269,8 @@ Posting to https://api.thingspeak.com/update.json
 ```
 
 ### MQTT publish
+Publish data to the https://thingspeak.com/ cloud backend using MQTT. 
+
 ```
 /CIRCUITPY
 ├── code.py # copied from below
