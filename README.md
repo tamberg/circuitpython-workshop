@@ -213,7 +213,7 @@ Code done running.
 /CIRCUITPY
 ├── code.py # copied from below
 └── lib # libraries from bundle
-    └── TODO
+    └── adafruit_requests.mpy
 ```
 
 ```
