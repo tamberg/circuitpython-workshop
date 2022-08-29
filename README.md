@@ -28,7 +28,7 @@ The workshop requires a Wi-Fi network that is accessible without a portal. Alter
 https://circuitpython.org/
 
 ## Toolchain setup
-### Text Editor
+### Code Editor
 CircuitPython works with any text editor, e.g. [Mu Editor](https://codewith.mu/), [VS Code](https://code.visualstudio.com/), or *nano*.
 
 ```
