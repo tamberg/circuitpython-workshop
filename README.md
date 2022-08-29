@@ -209,6 +209,10 @@ Code done running.
 ```
 
 ### HTTP post
+Post data to the https://thingspeak.com/ cloud backend.
+
+Create a free account to get a Write API Key.
+
 ```
 /CIRCUITPY
 ├── code.py # copied from below
