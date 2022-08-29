@@ -8,7 +8,7 @@ The Internet of Things ([IoT](http://www.tamberg.org/fhnw/2021/hs/IoT01Introduct
 - [Toolchain Setup](#toolchain-setup)
 - [Hardware Setup](#hardware-setup)
 - [GPIO & Sensors](#gpio--sensors)
-- [Wi-Fi & HTTP](#wifi--http)
+- [Wi-Fi, HTTP & MQTT](#wifi--http--mqtt)
 
 ### Objective
 This workshop teaches the basics of embedded programming on the latest IoT hardware, with CircuitPython.
@@ -175,5 +175,39 @@ while True:
 ### More
 Search the [library bundle docs](https://docs.circuitpython.org/projects/bundle/en/latest/drivers.html) for a sensor or actuator name.
 
-## Wi-Fi & HTTP
+## Wi-Fi, HTTP & MQTT
+### Wi-Fi connect
+```
+/CIRCUITPY
+├── code.py # copied from below
+└── lib # libraries from bundle
+    └── TODO
+```
+
+```
 TODO
+```
+
+### HTTP post
+```
+/CIRCUITPY
+├── code.py # copied from below
+└── lib # libraries from bundle
+    └── TODO
+```
+
+```
+TODO
+```
+
+### MQTT publish
+```
+/CIRCUITPY
+├── code.py # copied from below
+└── lib # libraries from bundle
+    └── TODO
+```
+
+```
+TODO
+```
