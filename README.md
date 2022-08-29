@@ -34,6 +34,10 @@ CircuitPython works with any text editor, e.g. [Mu Editor](https://codewith.mu/)
 ### Serial Monitor
 To see output you'll need a serial monitor like [PuTTY](https://www.putty.org/) on Windows or *screen* on MacOS, Linux.
 
+```
+$ screen /dev/tty.u<TAB> 115200
+```
+
 ### CircuitPython Libraries
 Download the CircuitPython library bundle ZIP file from https://circuitpython.org/libraries
 
@@ -196,8 +200,6 @@ print("Connected, IP address = {0}".format(wifi.radio.ipv4_address))
 ```
 
 ```
-$ screen /dev/tty.u<TAB> 115200
-
 Connecting to Wi-Fi "MY_SSID"...
 Connected, IP address = 192.168.0.23
 
