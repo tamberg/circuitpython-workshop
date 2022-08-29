@@ -195,6 +195,15 @@ wifi.radio.connect(WIFI_SSID, WIFI_PASS) # waits for IP address
 print("Connected, IP address = {0}".format(wifi.radio.ipv4_address))
 ```
 
+```
+$ screen /dev/tty.u<TAB> 115200
+
+Connecting to Wi-Fi "MY_SSID"...
+Connected, IP address = 192.168.0.23
+
+Code done running.
+```
+
 ### HTTP post
 ```
 /CIRCUITPY
