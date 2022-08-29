@@ -226,7 +226,7 @@ import adafruit_requests
 
 WIFI_SSID = "MY_SSID" # TODO
 WIFI_PASS = "MY_PASSWORD" # TODO
-CLOUD_KEY = "..." # TODO, ThingSpeak Write API Key
+CLOUD_KEY = "****************" # TODO, ThingSpeak Write API Key
 CLOUD_URL = "https://api.thingspeak.com/update.json"
 
 print("Connecting to Wi-Fi \"{0}\"...".format(WIFI_SSID))
@@ -243,10 +243,19 @@ while True:
         "api_key": CLOUD_KEY,
         "field1": value, 
     }
-    print("{0}\n\n{1}".format(CLOUD_URL, json_data))
+    print("{0}\n> {1}".format(CLOUD_URL, json_data))
     response = https.post(CLOUD_URL, json=json_data)
-    print(response.json())
+    print("< {0}".format(response.json()))
     time.sleep(30) # s
+
+```
+
+```
+Connecting to Wi-Fi "MY_SSID"...
+Connected, IP address = 192.168.113.170
+https://api.thingspeak.com/update.json
+> {'field1': 23.0, 'api_key': '****************'}
+< {'field1': 23.0, 'status': None, 'longitude': None, 'entry_id': 78, 'latitude': None, 'elevation': None, 'field8': None, 'channel_id': 42, 'field7': None, 'created_at': '2022-08-30T13:37:00Z', 'field6': None, 'field5': None, 'field4': None, 'field3': None, 'field2': None}
 ```
 
 ### MQTT publish
