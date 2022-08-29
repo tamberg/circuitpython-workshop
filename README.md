@@ -252,10 +252,10 @@ while True:
 
 ```
 Connecting to Wi-Fi "MY_SSID"...
-Connected, IP address = 192.168.113.170
+Connected, IP address = 192.168.0.42
 Posting to https://api.thingspeak.com/update.json
 > {'field1': 23.0, 'api_key': '****************'}
-< {'field1': 23.0, 'channel_id': 42, 'created_at': '2022-08-30T13:37:00Z', ...}
+< {'field1': 23.0, 'channel_id': 555, 'created_at': '2022-08-30T13:37:00Z', ...}
 ```
 
 ### MQTT publish
