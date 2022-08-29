@@ -217,7 +217,7 @@ CLOUD_KEY = "..." # TODO, ThingSpeak Write API Key
 CLOUD_URL = "https://api.thingspeak.com/update?api_key={0}".format(CLOUD_KEY)
 
 print("Connecting to Wi-Fi \"{0}\"...".format(WIFI_SSID))
-wifi.radio.connect(WIFI_SSID, WIFI_PASS) # waits for IP address, reconnects automatically
+wifi.radio.connect(WIFI_SSID, WIFI_PASS) # waits for IP address
 print("Connected, IP address = {0}".format(wifi.radio.ipv4_address))
 
 socket = socketpool.SocketPool(wifi.radio)
