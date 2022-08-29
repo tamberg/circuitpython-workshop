@@ -8,7 +8,7 @@ The Internet of Things ([IoT](http://www.tamberg.org/fhnw/2021/hs/IoT01Introduct
 - [Toolchain Setup](#toolchain-setup)
 - [Hardware Setup](#hardware-setup)
 - [GPIO & Sensors](#gpio--sensors)
-- [Wi-Fi & HTTP](#wifi--http)
+- [Wi-Fi, HTTP & MQTT](#wifi--http--mqtt)
 
 ### Objective
 This workshop teaches the basics of embedded programming on the latest IoT hardware, with CircuitPython.
@@ -85,7 +85,6 @@ Copy your code to a file named code.py on the drive.
 
 * https://learn.adafruit.com/assets/107493 (Pinout)
 * https://learn.adafruit.com/adafruit-qt-py-esp32-s2/pinouts
-* https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/_images/esp32-s2_saola1-pinout.jpg (esp32s2_saola)
 
 #### Schematic
 <img text="ESP32-S2 Schematic, (c) Adafruit" src="https://cdn-learn.adafruit.com/assets/assets/000/110/384/original/adafruit_products_QT_Py_rev_C_sch.png?1648589651" width="640"/>
@@ -98,7 +97,6 @@ Copy your code to a file named code.py on the drive.
 * [ESP32-S2 Series Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf)
 * [ESP32-S2 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-s2_technical_reference_manual_en.pdf)
 * [ESP32-S2 WROVER Technical Reference Manual](https://cdn-learn.adafruit.com/assets/assets/000/096/707/original/esp32-s2-wrover_esp32-s2-wrover-i_datasheet_en.pdf)
-* https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/hw-reference/esp32s2/user-guide-saola-1-v1.2.html (esp32s2_saola)
 
 ## GPIO & sensors
 ### Blink (digital output)
@@ -146,7 +144,7 @@ while True:
     time.sleep(0.1)
 ```
 ### DHT11 temperature & humidity
-<img src="QtPyEsp32S2DhtWiring.png" width="480"/>
+<img src="QtPyEsp32S2DhtWiring.png" width="400"/>
 
 ```
 /CIRCUITPY
@@ -174,8 +172,75 @@ while True:
     time.sleep(5)
 ```
 
-### More sensors
-See [TODO](https://TODO)
+### More
+Search the [library bundle docs](https://docs.circuitpython.org/projects/bundle/en/latest/drivers.html) for a sensor or actuator name.
 
-## Wi-Fi & HTTP
+## Wi-Fi, HTTP & MQTT
+### Wi-Fi connect
+```
+/CIRCUITPY
+├── code.py # copied from below
+└── lib # libraries from bundle
+    └── TODO
+```
+
+```
+import wifi
+
+WIFI_SSID = "MY_SSID" # TODO
+WIFI_PASS = "MY_PASSWORD" # TODO
+
+print("Connecting to Wi-Fi \"{0}\"...".format(WIFI_SSID))
+wifi.radio.connect(WIFI_SSID, WIFI_PASS) # waits for IP address
+print("Connected, IP address = {0}".format(wifi.radio.ipv4_address))
+```
+
+### HTTP post
+```
+/CIRCUITPY
+├── code.py # copied from below
+└── lib # libraries from bundle
+    └── TODO
+```
+
+```
+import ssl
+import time
+import wifi
+import socketpool
+
+import adafruit_requests
+
+WIFI_SSID = "MY_SSID" # TODO
+WIFI_PASS = "MY_PASSWORD" # TODO
+CLOUD_KEY = "..." # TODO, ThingSpeak Write API Key
+CLOUD_URL = "https://api.thingspeak.com/update?api_key={0}".format(CLOUD_KEY)
+
+print("Connecting to Wi-Fi \"{0}\"...".format(WIFI_SSID))
+wifi.radio.connect(WIFI_SSID, WIFI_PASS) # waits for IP address
+print("Connected, IP address = {0}".format(wifi.radio.ipv4_address))
+
+socket = socketpool.SocketPool(wifi.radio)
+context = ssl.create_default_context()
+https = adafruit_requests.Session(socket, context)
+
+while True:
+    value = 23.0 # e.g. from sensor
+    json_data = { "field1": value }
+    print("{0}\n\n{1}".format(CLOUD_URL, json_data))
+    response = https.post(CLOUD_URL, json=json_data)
+    print(response.json())
+    time.sleep(30) # s
+```
+
+### MQTT publish
+```
+/CIRCUITPY
+├── code.py # copied from below
+└── lib # libraries from bundle
+    └── TODO
+```
+
+```
 TODO
+```
