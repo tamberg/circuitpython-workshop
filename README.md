@@ -42,6 +42,14 @@ To see output you'll need a serial monitor like [PuTTY](https://www.putty.org/) 
 $ screen /dev/tty.u<TAB> 115200
 ```
 
+If there is no output, use CTRL-D to reload
+
+```
+Hello, World!
+
+Code done running.
+```
+
 ### CircuitPython Libraries
 Download the CircuitPython library bundle ZIP file from https://circuitpython.org/libraries
 
