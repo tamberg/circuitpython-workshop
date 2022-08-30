@@ -50,6 +50,12 @@ Hello, World!
 Code done running.
 ```
 
+Or press any other key to enter the REPL
+```
+Adafruit CircuitPython ...
+>>>
+```
+
 ### CircuitPython Libraries
 Download the CircuitPython library bundle ZIP file from https://circuitpython.org/libraries
 
