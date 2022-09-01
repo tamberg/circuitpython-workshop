@@ -28,7 +28,7 @@ The workshop requires a Wi-Fi network that is accessible without a portal. Alter
 https://circuitpython.org/
 
 ## Toolchain setup
-### Text Editor
+### Code Editor
 CircuitPython works with any text editor, e.g. [Mu Editor](https://codewith.mu/), [VS Code](https://code.visualstudio.com/), or *nano*.
 
 ```
@@ -40,6 +40,19 @@ To see output you'll need a serial monitor like [PuTTY](https://www.putty.org/) 
 
 ```
 $ screen /dev/tty.u<TAB> 115200
+```
+
+If there is no output, use CTRL-D to reload
+
+```
+Hello, World!
+
+Code done running.
+```
+
+Or press any other key to enter the REPL
+```
+>>>
 ```
 
 ### CircuitPython Libraries
@@ -88,6 +101,10 @@ Copy required libraries from the bundle to the lib folder.
 
 Copy your code to a file named code.py on the drive.
 
+```
+$ cp hello/code.py /Volumes/CIRCUITPY/code.py
+```
+
 #### Pinout
 <img text="ESP32-S2 Pinout, (c) Adafruit" src="https://cdn-learn.adafruit.com/assets/assets/000/107/493/original/adafruit_products_Adafruit_QT_Py_ESP32-S2_Pinout.png?1640130293" width="800"/>
 
@@ -108,6 +125,8 @@ Copy your code to a file named code.py on the drive.
 
 ## GPIO & sensors
 ### Blink (digital output)
+Control a LED or any other digital actuator.
+
 <img src="QtPyEsp32S2BlinkWiring.png" width="320"/>
 
 ```
@@ -131,6 +150,8 @@ while True:
 ```
 
 ### Button (digital input)
+Read a button or any other digital sensor.
+
 <img src="QtPyEsp32S2ButtonWiring.png" width="320"/>
 
 ```
@@ -152,6 +173,8 @@ while True:
     time.sleep(0.1)
 ```
 ### DHT11 temperature & humidity
+Read a DHT11 sensor using the *adafruit_dht* library.
+
 <img src="QtPyEsp32S2DhtWiring.png" width="400"/>
 
 ```
@@ -185,6 +208,8 @@ Search the [library bundle docs](https://docs.circuitpython.org/projects/bundle/
 
 ## Wi-Fi, HTTP & MQTT
 ### Wi-Fi connect
+Connect to the Internet using Wi-Fi.
+
 ```
 /CIRCUITPY
 └── code.py # copied from below
@@ -209,6 +234,8 @@ Code done running.
 ```
 
 ### HTTP post
+Post data to the https://thingspeak.com/ cloud backend using HTTPS. Create a free account to get a Write API Key.
+
 ```
 /CIRCUITPY
 ├── code.py # copied from below
@@ -252,13 +279,15 @@ while True:
 
 ```
 Connecting to Wi-Fi "MY_SSID"...
-Connected, IP address = 192.168.113.170
+Connected, IP address = 192.168.0.42
 Posting to https://api.thingspeak.com/update.json
 > {'field1': 23.0, 'api_key': '****************'}
-< {'field1': 23.0, 'channel_id': 42, 'created_at': '2022-08-30T13:37:00Z', ...}
+< {'field1': 23.0, 'channel_id': 555, 'created_at': '2022-08-30T13:37:00Z', ...}
 ```
 
 ### MQTT publish
+Publish data to the https://thingspeak.com/ cloud backend using MQTT. 
+
 ```
 /CIRCUITPY
 ├── code.py # copied from below
