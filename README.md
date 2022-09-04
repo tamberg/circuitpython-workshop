@@ -61,8 +61,6 @@ Download the CircuitPython library bundle ZIP file from https://circuitpython.or
 You will selectively copy files from the ZIP to your microcontroller later on.
 
 ## Hardware Setup
-### Boards
-* [ESP32-S2](#esp32-s2)
 
 ### ESP32-S2
 #### Buy
