@@ -188,7 +188,7 @@ while True:
 False
 False
 True
-…
+...
 ```
 
 ### DHT11 temperature & humidity
@@ -224,7 +224,7 @@ while True:
 
 ```
 23.00 °C, 42.00 %
-…
+...
 ```
 
 ### More
@@ -309,7 +309,7 @@ Connecting to Wi-Fi "MY_SSID"...
 Connected, IP address = 192.168.0.42
 Posting to https://api.thingspeak.com/update.json
 > {'field1': 23.0, 'api_key': '****************'}
-< {'field1': 23.0, 'channel_id': 555, 'created_at': '2022-08-30T13:37:00Z', …
+< {'field1': 23.0, 'channel_id': 555, 'created_at': '2022-08-30T13:37:00Z', ...
 ```
 Challenge: Try to merge in the [DHT11 example](#dht11-temperature--humidity) above to get real sensor values.
 
