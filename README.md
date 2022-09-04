@@ -256,7 +256,9 @@ Connected, IP address = 192.168.0.23
 
 Code done running.
 ```
-> Note: Once connected to the Internet, you can send data, e.g. using [HTTP post](#http-post) or [MQTT publish](mqtt-publish).
+Once a device is connected to the Internet, you can send data to a cloud backend.
+
+This is often done with [HTTP post](#http-post) or [MQTT publish](#mqtt-publish).
 
 ### HTTP post
 Post data to the https://thingspeak.com/ cloud backend using HTTPS. Create a free account to get a Write API Key.
@@ -309,6 +311,7 @@ Posting to https://api.thingspeak.com/update.json
 > {'field1': 23.0, 'api_key': '****************'}
 < {'field1': 23.0, 'channel_id': 555, 'created_at': '2022-08-30T13:37:00Z', ...}
 ```
+Challenge: Try to merge in the [DHT11 example](#dht11-temperature--humidity) above to get real sensor values.
 
 ### MQTT publish
 Publish data to the https://thingspeak.com/ cloud backend using MQTT. 
