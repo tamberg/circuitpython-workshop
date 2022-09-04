@@ -25,11 +25,11 @@ The workshop requires a Wi-Fi network that is accessible without a portal. Alter
 ### CircuitPython
 > The easiest way to program microcontrollers — https://circuitpython.org/
 
-To program a CircuitPython microcontroller, just plug it in.
+To program a CircuitPython microcontroller, plug it in via USB.
 
 It shows up* as a USB drive called CIRCUITPY.
 
-<sup>*</sup>If not, see [hardware setup](#hardware-setup).
+(<sup>*</sup>If not, see [hardware setup](#hardware-setup).)
 
 ## Toolchain setup
 ### Code editor
