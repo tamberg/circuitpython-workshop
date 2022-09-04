@@ -60,20 +60,22 @@ Or press any other key to enter the REPL
 ```
 
 ### CircuitPython libraries
-Download the CircuitPython library bundle ZIP file from https://circuitpython.org/libraries
+Download the library bundle ZIP file from https://circuitpython.org/libraries
 
 You will selectively copy files from the ZIP to your microcontroller later on.
 
 ### Run Python code
 Plug in your board via USB and open the _CIRCUITPY_ drive.
 
-Copy required libraries from the bundle to the lib folder.
+Copy required libraries from the bundle to the _lib_ folder.
 
-Copy your code to a file named code.py on the drive.
+Copy your code to a file named _code.py_ on the drive.
 
 ```
 $ cp hello/code.py /Volumes/CIRCUITPY/code.py
 ```
+
+Now you're ready to try [GPIO & sensors](gpio--sensors).
 
 ## Hardware setup
 
