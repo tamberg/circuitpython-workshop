@@ -171,7 +171,7 @@ while True:
     time.sleep(0.1)
 ```
 ### DHT11 temperature & humidity
-Read a DHT11 sensor using the *adafruit_dht* library.
+Read a DHT11 sensor using the *adafruit_dht* [library](#circuitpython-libraries).
 
 <img src="QtPyEsp32S2DhtWiring.png" width="400"/>
 
