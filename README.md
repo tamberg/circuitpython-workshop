@@ -23,21 +23,23 @@ The workshop requires a Wi-Fi network that is accessible without a portal. Alter
 
 ## Introduction
 ### CircuitPython
-> The easiest way to program microcontrollers
+> The easiest way to program microcontrollers — https://circuitpython.org/
 
-> With CircuitPython, there are no upfront desktop downloads needed. Once you get your board set up, open any text editor, and start editing code. It's that simple.
+To program a CircuitPython microcontroller, just plug it in.
 
-https://circuitpython.org/
+It shows up* as a USB drive called CIRCUITPY.
+
+<sup>*</sup>If not, see [hardware setup](#hardware-setup).
 
 ## Toolchain setup
-### Code Editor
+### Code editor
 CircuitPython works with any text editor, e.g. [Mu Editor](https://codewith.mu/), [VS Code](https://code.visualstudio.com/), or *nano*.
 
 ```
 $ nano /Volumes/CIRCUITPY/code.py
 ```
 
-### Serial Monitor
+### Serial monitor
 To see output you'll need a serial monitor like [PuTTY](https://www.putty.org/) on Windows or *screen* on MacOS, Linux.
 
 ```
@@ -57,12 +59,12 @@ Or press any other key to enter the REPL
 >>>
 ```
 
-### CircuitPython Libraries
+### CircuitPython libraries
 Download the CircuitPython library bundle ZIP file from https://circuitpython.org/libraries
 
 You will selectively copy files from the ZIP to your microcontroller later on.
 
-## Hardware Setup
+## Hardware setup
 
 ### ESP32-S2
 #### Buy
@@ -80,7 +82,7 @@ To get the ESP32-S2 into [ROM bootloader mode](https://learn.adafruit.com/adafru
 
 Now the board should show up as a USB device, e.g. /dev/cu.usbmodem01 on MacOS or COM3 on Windows.
 
-#### Install UF2 Bootloader (once)
+#### Install UF2 bootloader (once)
 To install the UF2 bootloader, follow the steps to _Install, Repair, or Update UF2 Bootloader_ at the bottom of https://circuitpython.org/board/adafruit_qtpy_esp32s2/
 
 Use https://nabucasa.github.io/esp-web-flasher/ with _combined.bin_ from [tinyuf2-adafruit_qtpy_esp32s2-0.10.2.zip](https://github.com/adafruit/tinyuf2/releases/download/0.10.2/tinyuf2-adafruit_qtpy_esp32s2-0.10.2.zip)
