@@ -27,7 +27,7 @@ The workshop requires a Wi-Fi network that is accessible without a portal. Alter
 
 To program a CircuitPython microcontroller, plug it in via USB.
 
-It shows up as a USB drive called CIRCUITPY.
+It shows up as a USB drive called _CIRCUITPY_.
 
 (If not, see [hardware setup](#hardware-setup).)
 
@@ -64,6 +64,17 @@ Download the CircuitPython library bundle ZIP file from https://circuitpython.or
 
 You will selectively copy files from the ZIP to your microcontroller later on.
 
+### Run Python code
+Plug in your board via USB and open the _CIRCUITPY_ drive.
+
+Copy required libraries from the bundle to the lib folder.
+
+Copy your code to a file named code.py on the drive.
+
+```
+$ cp hello/code.py /Volumes/CIRCUITPY/code.py
+```
+
 ## Hardware setup
 
 ### ESP32-S2
@@ -95,17 +106,6 @@ Download the board specific .UF2 file from https://circuitpython.org/board/adafr
 Drop it on the USB drive named _QTPYS2BOOT_ and wait until the drive disconnects.
 
 Now the board should show up as a USB drive named _CIRCUITPY_.
-
-#### Install your Python code
-Plug in your board via USB and open the _CIRCUITPY_ drive.
-
-Copy required libraries from the bundle to the lib folder.
-
-Copy your code to a file named code.py on the drive.
-
-```
-$ cp hello/code.py /Volumes/CIRCUITPY/code.py
-```
 
 #### Pinout
 <img text="ESP32-S2 Pinout, (c) Adafruit" src="https://cdn-learn.adafruit.com/assets/assets/000/107/493/original/adafruit_products_Adafruit_QT_Py_ESP32-S2_Pinout.png?1640130293" width="800"/>
