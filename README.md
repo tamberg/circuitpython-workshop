@@ -156,6 +156,10 @@ while True:
     time.sleep(1)
 ```
 
+```
+<No output, but LED should blink>
+```
+
 ### Button (digital input)
 Read a button or any other digital sensor.
 
