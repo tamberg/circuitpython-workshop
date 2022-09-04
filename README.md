@@ -25,6 +25,8 @@ The workshop requires a Wi-Fi network that is accessible without a portal. Alter
 ### CircuitPython
 > The easiest way to program microcontrollers
 
+> With CircuitPython, there are no upfront desktop downloads needed. Once you get your board set up, open any text editor, and start editing code. It's that simple.
+
 https://circuitpython.org/
 
 ## Toolchain setup
