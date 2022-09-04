@@ -258,7 +258,7 @@ Code done running.
 ```
 Once a device is connected to the Internet, you can send data to a cloud backend.
 
-This is often done with [HTTP post](#http-post) or [MQTT publish](#mqtt-publish).
+To see how this works, try [HTTP post](#http-post) or [MQTT publish](#mqtt-publish).
 
 ### HTTP post
 Post data to the https://thingspeak.com/ cloud backend using HTTPS. Create a free account to get a Write API Key.
