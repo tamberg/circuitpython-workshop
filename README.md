@@ -256,7 +256,7 @@ Connected, IP address = 192.168.0.23
 
 Code done running.
 ```
-Once a device is connected to the Internet, you can send data to a cloud backend.
+Once a device is connected to the Internet, it can send data to a cloud backend.
 
 To see how this works, try the [HTTP post](#http-post) or [MQTT publish](#mqtt-publish) examples.
 
