@@ -157,7 +157,7 @@ while True:
 ```
 
 ```
-<No output, but LED should blink>
+# No output, but LED should blink
 ```
 
 ### Button (digital input)
@@ -183,6 +183,14 @@ while True:
     print(sensor.value)
     time.sleep(0.1)
 ```
+
+```
+False
+False
+True
+...
+```
+
 ### DHT11 temperature & humidity
 Read a DHT11 sensor using the *adafruit_dht* [library](#circuitpython-libraries).
 
@@ -212,6 +220,11 @@ while True:
         print("Oops, reading the sensor did not work.")
 
     time.sleep(5)
+```
+
+```
+23.00 °C, 42.00 %
+...
 ```
 
 ### More
