@@ -27,9 +27,9 @@ The workshop requires a Wi-Fi network that is accessible without a portal. Alter
 
 To program a CircuitPython microcontroller, plug it in via USB.
 
-It shows up* as a USB drive called CIRCUITPY.
+It shows up as a USB drive called CIRCUITPY.
 
-(<sup>*</sup>If not, see [hardware setup](#hardware-setup).)
+(If not, see [hardware setup](#hardware-setup).)
 
 ## Toolchain setup
 ### Code editor
