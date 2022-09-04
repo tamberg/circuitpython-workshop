@@ -256,6 +256,7 @@ Connected, IP address = 192.168.0.23
 
 Code done running.
 ```
+> Note: Once connected to the Internet, you can send data, e.g. using [HTTP post](#http-post) or [MQTT publish](mqtt-publish).
 
 ### HTTP post
 Post data to the https://thingspeak.com/ cloud backend using HTTPS. Create a free account to get a Write API Key.
