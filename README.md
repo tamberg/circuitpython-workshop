@@ -75,7 +75,7 @@ Copy your code to a file named _code.py_ on the drive.
 $ cp hello/code.py /Volumes/CIRCUITPY/code.py
 ```
 
-Now you're ready to try [GPIO & sensors](gpio--sensors).
+Now you are ready to try [GPIO & sensors](#gpio--sensors).
 
 ## Hardware setup
 
@@ -108,6 +108,9 @@ Download the board specific .UF2 file from https://circuitpython.org/board/adafr
 Drop it on the USB drive named _QTPYS2BOOT_ and wait until the drive disconnects.
 
 Now the board should show up as a USB drive named _CIRCUITPY_.
+
+#### Troubleshooting
+* https://learn.adafruit.com/welcome-to-circuitpython/troubleshooting
 
 #### Pinout
 <img text="ESP32-S2 Pinout, (c) Adafruit" src="https://cdn-learn.adafruit.com/assets/assets/000/107/493/original/adafruit_products_Adafruit_QT_Py_ESP32-S2_Pinout.png?1640130293" width="800"/>
