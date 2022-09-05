@@ -17,7 +17,7 @@ This workshop teaches the basics of embedded programming on the latest IoT hardw
 This workshop is aimed at interested people with basic programming experience in Python.
 
 ### Prerequisites
-Participants need a laptop with MacOS, Windows or Linux, and one USB/USB-C ports. IoT hardware including sensors is available on loan.
+Participants need a laptop with MacOS, Windows or Linux, and one USB/USB-C port. IoT hardware including sensors is available on loan.
 
 The workshop requires a Wi-Fi network that is accessible without a portal. Alternatively, a personal smartphone can be used as a hotspot.
 
