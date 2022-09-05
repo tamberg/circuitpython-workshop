@@ -78,6 +78,7 @@ $ cp hello/code.py /Volumes/CIRCUITPY/code.py
 Now you are ready to try [GPIO & sensors](#gpio--sensors).
 
 ## Hardware setup
+We use an [ESP32-S2 microcontroller](#esp32-s2) with [Grove sensors and actuators](#grove-sensors--actuators).
 
 ### ESP32-S2
 #### Buy
