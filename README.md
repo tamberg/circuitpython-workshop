@@ -84,7 +84,7 @@ Now you are ready to try [GPIO & sensors](#gpio--sensors).
 * https://www.adafruit.com/product/5325 (Adafruit QT Py ESP32-S2 WiFi Dev Board)
 * https://www.adafruit.com/product/4198 (USB C to USB C cable for data transfer)
 * https://www.adafruit.com/product/4175 (USB C to USB A adapter, optional)
-* https://www.adafruit.com/product/65 (Tiny breadboard, to connect sensors)
+* https://www.adafruit.com/product/65 (Breadboard, to connect sensors)
 
 #### Board
 https://circuitpython.org/board/adafruit_qtpy_esp32s2/
