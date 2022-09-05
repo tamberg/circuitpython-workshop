@@ -315,6 +315,8 @@ Posting to https://api.thingspeak.com/update.json
 ```
 Challenge: Try to merge in the [DHT11 example](#dht11-temperature--humidity) above to get real sensor values.
 
+Learn more about [Internet protocols and HTTP](http://www.tamberg.org/fhnw/2021/fs/IdbInternetProtocols.pdf).
+
 ### MQTT publish
 Publish data to the https://thingspeak.com/ cloud backend using MQTT. 
 
