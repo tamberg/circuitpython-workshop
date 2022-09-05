@@ -261,7 +261,9 @@ Once a device is connected to the Internet, it can send data to a cloud backend.
 To see how this works, try the [HTTP post](#http-post) or [MQTT publish](#mqtt-publish) examples.
 
 ### HTTP post
-Post data to the https://thingspeak.com/ cloud backend using HTTPS. Create a free account to get a Write API Key.
+Post data to the https://thingspeak.com/ cloud backend using HTTPS.
+
+Create a free ThingSpeak account to get a Write API Key.
 
 ```
 /CIRCUITPY
