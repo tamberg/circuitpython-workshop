@@ -384,3 +384,5 @@ while True:
     mqtt_client.publish(mqtt_topic, mqtt_payload)
     time.sleep(5)
 ```
+
+Learn more about the [MQTT messaging protocol](http://www.tamberg.org/fhnw/2021/fs/IdbMessagingProtocols.pdf).
