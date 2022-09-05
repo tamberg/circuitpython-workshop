@@ -313,9 +313,9 @@ Posting to https://api.thingspeak.com/update.json
 > {'field1': 23.0, 'api_key': '****************'}
 < {'field1': 23.0, 'channel_id': 555, 'created_at': '2022-08-30T13:37:00Z', ...
 ```
-Challenge: Try to merge in the [DHT11 example](#dht11-temperature--humidity) above to get real sensor values.
+Now, try to merge in the [DHT11 example](#dht11-temperature--humidity) to send real sensor values.
 
-Learn more about [Internet protocols and HTTP](http://www.tamberg.org/fhnw/2021/fs/IdbInternetProtocols.pdf).
+Or learn more about [Internet protocols and HTTP](http://www.tamberg.org/fhnw/2021/fs/IdbInternetProtocols.pdf).
 
 ### MQTT publish
 Publish data to the https://thingspeak.com/ cloud backend using MQTT. 
