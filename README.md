@@ -82,6 +82,7 @@ Now you are ready to try [GPIO & sensors](#gpio--sensors).
 ### ESP32-S2
 #### Buy
 https://www.adafruit.com/product/5325 (Adafruit QT Py ESP32-S2 WiFi Dev Board)
+https://www.adafruit.com/product/4198 (USB C cable, plus [USB A adapter](https://www.adafruit.com/product/4175))
 
 #### Board
 https://circuitpython.org/board/adafruit_qtpy_esp32s2/
@@ -129,6 +130,14 @@ Now the board should show up as a USB drive named _CIRCUITPY_.
 * [ESP32-S2 Series Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-s2_datasheet_en.pdf)
 * [ESP32-S2 Technical Reference Manual](https://www.espressif.com/sites/default/files/documentation/esp32-s2_technical_reference_manual_en.pdf)
 * [ESP32-S2 WROVER Technical Reference Manual](https://cdn-learn.adafruit.com/assets/assets/000/096/707/original/esp32-s2-wrover_esp32-s2-wrover-i_datasheet_en.pdf)
+
+### Grove sensors & actuators
+#### Buy
+* https://www.seeedstudio.com/Grove-Button-p-766.html
+* https://www.seeedstudio.com/Grove-Red-LED-p-1142.html
+* https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor-p-770.html
+* https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DHT1-p-745.html
+* https://www.seeedstudio.com/Grove-4-pin-Male-Jumper-to-Grove-4-pin-Conversion-Cable-5-PCs-per-Pack.html
 
 ## GPIO & sensors
 ### Blink (digital output)
