@@ -40,7 +40,7 @@ $ nano /Volumes/CIRCUITPY/code.py
 ```
 
 ### Serial monitor
-To see output you'll need a serial monitor like [PuTTY](https://www.putty.org/) on Windows or *screen* on MacOS, Linux.
+To see output you'll need a serial monitor like [tio](https://github.com/tio/tio#4-installation), [PuTTY](https://www.putty.org/) on Windows or *screen* on MacOS, Linux.
 
 ```
 $ screen /dev/tty.u<TAB> 115200
