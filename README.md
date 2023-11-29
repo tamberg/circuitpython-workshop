@@ -109,9 +109,10 @@ To install the UF2 bootloader, follow the steps to _Install, Repair, or Update U
 Now press _RESET_ to make the board show up as a USB drive named _QTPYS2BOOT_.
 
 #### Install CircuitPython (once)
-Download the board specific _.UF2_ file from https://circuitpython.org/board/adafruit_qtpy_esp32s2/
+To install CircuitPython or more precisely the CircuitPython interpreter, follow these steps:
 
-Drop it on the USB drive named _QTPYS2BOOT_ and wait until the drive disconnects.
+* Download the board specific _.UF2_ file from https://circuitpython.org/board/adafruit_qtpy_esp32s2/
+* Drop it on the USB drive named _QTPYS2BOOT_ and wait until the drive disconnects.
 
 Now the board should show up as a USB drive named _CIRCUITPY_.
 
