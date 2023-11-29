@@ -104,7 +104,9 @@ To install the UF2 bootloader, follow the steps to _Install, Repair, or Update U
 
 Download [tinyuf2-adafruit_qtpy_esp32s2-0.16.0.zip](https://github.com/adafruit/tinyuf2/releases/download/0.16.0/tinyuf2-adafruit_qtpy_esp32s2-0.16.0.zip) and extract it, to get _combined.bin_.
 
-Use https://nabucasa.github.io/esp-web-flasher/ with _460800 Baud_, _Connect_ and _Choose a file ..._, here _combined.bin_, then _Program_.
+Use https://nabucasa.github.io/esp-web-flasher/ with _460800 Baud_ to _Connect_.
+
+Then _Choose a file ..._, here _combined.bin_ and click _Program_ to upload it.
 
 Now press _RESET_ to make the board show up as a USB drive named _QTPYS2BOOT_.
 
