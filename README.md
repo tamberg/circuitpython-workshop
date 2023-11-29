@@ -107,7 +107,7 @@ Use https://nabucasa.github.io/esp-web-flasher/ with _combined.bin_ from [tinyuf
 Now press _RESET_ to make the board show up as a USB drive named _QTPYS2BOOT_.
 
 #### Install CircuitPython (once)
-Download the board specific .UF2 file from https://circuitpython.org/board/adafruit_qtpy_esp32s2/
+Download the board specific _.UF2_ file from https://circuitpython.org/board/adafruit_qtpy_esp32s2/
 
 Drop it on the USB drive named _QTPYS2BOOT_ and wait until the drive disconnects.
 
