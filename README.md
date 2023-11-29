@@ -102,7 +102,7 @@ Now the board should show up as a USB device, e.g. /dev/cu.usbmodem01 on MacOS o
 #### Install UF2 bootloader (once)
 To install the UF2 bootloader, follow the steps to _Install, Repair, or Update UF2 Bootloader_ at the bottom of https://circuitpython.org/board/adafruit_qtpy_esp32s2/
 
-Use https://nabucasa.github.io/esp-web-flasher/ with _combined.bin_ from [tinyuf2-adafruit_qtpy_esp32s2-0.10.2.zip](https://github.com/adafruit/tinyuf2/releases/download/0.10.2/tinyuf2-adafruit_qtpy_esp32s2-0.10.2.zip)
+Use https://nabucasa.github.io/esp-web-flasher/ with _combined.bin_ from [tinyuf2-adafruit_qtpy_esp32s3-0.16.0.zip](https://github.com/adafruit/tinyuf2/releases/download/0.16.0/tinyuf2-adafruit_qtpy_esp32s3-0.16.0.zip)
 
 Now press _RESET_ to make the board show up as a USB drive named _QTPYS2BOOT_.
 
