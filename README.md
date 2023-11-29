@@ -97,7 +97,7 @@ To get the ESP32-S2 into [ROM bootloader mode](https://learn.adafruit.com/adafru
 * Then, press the _RESET_ button
 * Release the _BOOT_ button
 
-Now the board should show up as a USB device, e.g. /dev/cu.usbmodem01 on MacOS or COM3 on Windows.
+Now the board should show up as a USB device, e.g. _/dev/cu.usbmodem01_ on MacOS or _COM3_ on Windows.
 
 #### Install UF2 bootloader (once)
 To install the UF2 bootloader, follow the steps to _Install, Repair, or Update UF2 Bootloader_ at the bottom of https://circuitpython.org/board/adafruit_qtpy_esp32s2/
