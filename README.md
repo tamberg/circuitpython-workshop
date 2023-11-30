@@ -105,8 +105,9 @@ To install the UF2 bootloader, follow the steps to _Install, Repair, or Update U
 * Download [tinyuf2-adafruit_qtpy_esp32s2-0.16.0.zip](https://github.com/adafruit/tinyuf2/releases/download/0.16.0/tinyuf2-adafruit_qtpy_esp32s2-0.16.0.zip) and extract it, to find _combined.bin_.
 * Use https://nabucasa.github.io/esp-web-flasher/ with _460'800 Baud_ to _Connect_.
 * Then _Choose a file ..._ to select _combined.bin_ and click _Program_ to upload it.
+* Once the upload finished, press the _RESET_ button on the ESP32-S2.
 
-Now press _RESET_ to make the board show up as a USB drive named _QTPYS2BOOT_.
+Now the board should show up as a USB drive named _QTPYS2BOOT_.
 
 #### Install CircuitPython (once)
 To install CircuitPython or more precisely the CircuitPython interpreter, follow these steps:
