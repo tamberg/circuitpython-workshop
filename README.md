@@ -8,7 +8,7 @@ The Internet of Things ([IoT](http://www.tamberg.org/fhnw/2021/hs/IoT01Introduct
 - [Toolchain Setup](#toolchain-setup)
 - [Hardware Setup](#hardware-setup)
 - [GPIO & Sensors](#gpio--sensors)
-- [Wi-Fi, HTTP & MQTT](#wifi--http--mqtt)
+- [Wi-Fi, HTTP & MQTT](#wi-fi-http--mqtt)
 
 ### Objective
 This workshop teaches the basics of embedded programming on the latest IoT hardware, with CircuitPython.
