@@ -62,7 +62,7 @@ Or press any other key to enter the REPL
 (To end _screen_ press CTRL-A-K.)
 
 ### CircuitPython libraries
-Download the library bundle ZIP file from https://circuitpython.org/libraries
+Download the library bundle _8.x_ ZIP file from https://circuitpython.org/libraries
 
 You will selectively copy files from the ZIP to your microcontroller later on.
 
