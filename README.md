@@ -59,7 +59,7 @@ Or press any other key to enter the REPL
 >>>
 ```
 
-<sup>*</sup>To end _screen_ press CTRL-A-K.
+(<sup>*</sup>To end _screen_ press CTRL-A-K.)
 
 ### CircuitPython libraries
 Download the library bundle ZIP file from https://circuitpython.org/libraries
