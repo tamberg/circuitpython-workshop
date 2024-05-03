@@ -40,7 +40,7 @@ $ nano /Volumes/CIRCUITPY/code.py
 ```
 
 ### Serial monitor
-To see output you'll need a serial monitor like [PuTTY](https://www.putty.org/) on Windows or *screen* on MacOS, Linux (or [tio](https://github.com/tio/tio#4-installation)).
+To see output you'll need a serial monitor like [PuTTY](https://www.putty.org/) on Windows or *screen<sup>*</sup>* on MacOS, Linux (or [tio](https://github.com/tio/tio#4-installation)).
 
 ```
 $ screen /dev/tty.u<TAB> 115200
@@ -58,6 +58,8 @@ Or press any other key to enter the REPL
 ```
 >>>
 ```
+
+<sup>*</sup>To end _screen_ press _CTRL A K_, then _y_.
 
 ### CircuitPython libraries
 Download the library bundle ZIP file from https://circuitpython.org/libraries
