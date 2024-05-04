@@ -11,7 +11,7 @@ The Internet of Things ([IoT](http://www.tamberg.org/fhnw/2021/hs/IoT01Introduct
 - [Wi-Fi, HTTP & MQTT](#wi-fi-http--mqtt)
 
 ### Objective
-This workshop teaches the basics of embedded programming on the latest IoT hardware, with CircuitPython.
+This [workshop](http://www.tamberg.org/chopen/2024/IoTEmbeddedProgrammingWithCircuitPython.pdf) teaches the basics of embedded programming on the latest IoT hardware, with CircuitPython.
 
 ### Target audience
 This workshop is aimed at interested people with basic programming experience in Python.
