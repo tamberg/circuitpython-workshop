@@ -31,6 +31,8 @@ It shows up as a USB drive called _CIRCUITPY_.
 
 (If not, see [hardware setup](#hardware-setup).)
 
+<img src="QtPyCircuitPython.png" width="640"/>
+
 ## Toolchain setup
 ### Code editor
 CircuitPython works with any text editor, e.g. [Mu Editor](https://codewith.mu/), [VS Code](https://code.visualstudio.com/), or *nano*.
