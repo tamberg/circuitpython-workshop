@@ -346,6 +346,8 @@ Publish data to the https://thingspeak.com/ cloud backend using MQTT.
 /CIRCUITPY
 ├── code.py # copied from below
 └── lib # libraries from bundle
+    ├── adafruit_connection_manager.mpy
+    ├── adafruit_tricks.mpy
     └── adafruit_minimqtt
         ├── __init__.py
         ├── adafruit_minimqtt.mpy
