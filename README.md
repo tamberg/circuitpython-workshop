@@ -64,7 +64,7 @@ Or press any other key to enter the REPL
 (To end _screen_ press CTRL-A-K.)
 
 ### CircuitPython libraries
-Download the library bundle _8.x_ ZIP file from https://circuitpython.org/libraries
+Download the library bundle _9.x_ ZIP file from https://circuitpython.org/libraries
 
 You will selectively copy files from the ZIP to your microcontroller later on.
 
@@ -289,6 +289,7 @@ Create a free ThingSpeak account to get a Write API Key.
 /CIRCUITPY
 ├── code.py # copied from below
 └── lib # libraries from bundle
+    ├── adafruit_connection_manager.mpy
     └── adafruit_requests.mpy
 ```
 
