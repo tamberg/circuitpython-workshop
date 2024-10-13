@@ -106,8 +106,9 @@ Now the board should show up as a USB device, e.g. _/dev/cu.usbmodem01_ on MacOS
 #### Install UF2 bootloader (once)
 To install the UF2 bootloader, follow the steps to _Install, Repair, or Update UF2 Bootloader_ at the bottom of https://circuitpython.org/board/adafruit_qtpy_esp32s2/ or try this:
 
-* Download [tinyuf2-adafruit_qtpy_esp32s2-0.18.2.zip](https://github.com/adafruit/tinyuf2/releases/download/0.18.2/tinyuf2-adafruit_qtpy_esp32s2-0.18.2.zip) and extract it, to find _combined.bin_.
-* Use https://nabucasa.github.io/esp-web-flasher/ with _460'800 Baud_ to _Connect_.
+* Download [tinyuf2-adafruit_qtpy_esp32s2-0.20.1.zip](https://github.com/adafruit/tinyuf2/releases/download/0.20.1/tinyuf2-adafruit_qtpy_esp32s2-0.20.1.zip) and extract it, to find _combined.bin_.
+* Use https://adafruit.github.io/Adafruit_WebSerial_ESPTool/ with _460'800 Baud_ to _Connect_.
+* Once the device is connected, first _Erase_ its flash memory (to prevent this [issue](https://github.com/tamberg/circuitpython-workshop/issues/2)).
 * Then _Choose a file ..._ to select _combined.bin_ and click _Program_ to upload it.
 * Once the upload finished, press the _RESET_ button on the ESP32-S2.
 
